@@ -11,7 +11,7 @@ const ChordPlayer = () => {
   const [isProcessing, setIsProcessing] = useState(false);
   const audioRef = useRef(null);
   const progressRef = useRef(null);
-  const API_URL = "https://cdsbackend.vercel.app";
+  const API_URL = "https://cdsbackend.onrender.com";
   const handleFileUpload = async (event) => {
     const file = event.target.files[0];
     if (!file) return;
@@ -22,7 +22,7 @@ const ChordPlayer = () => {
 
     try {
       const response = await fetch(
-        "https://cdsbackend.vercel.app/api/process-audio",
+        "https://cdsbackend.onrender.com/api/process-audio",
         {
           method: "POST",
           body: formData,
