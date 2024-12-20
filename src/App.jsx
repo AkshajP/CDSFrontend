@@ -38,7 +38,7 @@ const App = () => {
 
         {/* Footer */}
         <footer className="mt-8 text-center text-gray-600 text-sm">
-          <p>Powered by TensorFlow and React</p>
+          <p>Project Team 19</p>
         </footer>
       </main>
     </div>
